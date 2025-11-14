@@ -1,0 +1,75 @@
+/* Template layout styles */
+.dashboard-template.grid-3-column .dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-template.grid-2-column .dashboard-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dashboard-template.kanban .dashboard-content {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+}
+
+/* Theme variations */
+.dashboard-template.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dashboard-template.professional {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+}
+
+.dashboard-template.modern {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Widget positioning */
+.widget-top { grid-row: 1; }
+.widget-middle { grid-row: 2; }
+.widget-bottom { grid-row: 3; }
+.widget-left { grid-column: 1; }
+.widget-right { grid-column: 2; }
+.widget-sidebar { grid-column: 3; }
+
+/* Template selector styles */
+.template-categories {
+  display: grid;
+  gap: 15px;
+}
+
+.template-category {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.template-category.active {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.template-category:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.widget-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #e9ecef;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-right: 5px;
+}
